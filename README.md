@@ -146,4 +146,18 @@ __Install & Configure Software__
   - Install with Eddy
 
 
+- Neovim
+
+
+- Lazyvim
+
+
+---
+
+__Finishing Touches__
+
+- `sudo apt update && sudo apt upgrade -y`
+- `sudo apt autoremove -y`
+- `sudo apt autoclean`
+- `sudo reboot now`
 
