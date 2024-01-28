@@ -83,7 +83,7 @@ __Install & Configure Software__
     - `plugins=(git zsh-autosuggestions)`
 
 
-- Allacritty
+- Alacritty
   - `sudo apt install cmake libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev`
   - `git clone https://github.com/alacritty/alacritty.git`
   - `cd alacritty`
