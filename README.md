@@ -72,7 +72,7 @@ __Install & Configure Software__
   - Restart terminal
 
 
-- Zsh & Oh-My-Zsh
+- ZSH & Oh-My-Zsh
   - `sudo apt install zsh`
   - `chsh -s $(which zsh)`
   - `sudo apt reboot now`
