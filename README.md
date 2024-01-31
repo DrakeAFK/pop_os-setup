@@ -109,6 +109,21 @@ __Install & Configure Software__
     - `plugins=(git zsh-autosuggestions nvm node npm)`
 
 
+- Neovim
+  - `sudo apt install ninja-build gettext cmake unzip`
+  - `git clone https://github.com/neovim/neovim.git`
+  - `cd neovim`
+  - `git checkout v0.9.5`
+  - `make CMAKE_BUILD_TYPE=Release`
+  - `sudo make install`
+
+
+- Lazyvim
+  - `git clone https://github.com/LazyVim/starter ~/.config/nvim`
+  - `rm -rf ~/.config/nvim/.git`
+  - `nvim`
+
+
 - Neofetch
   - `sudo apt install neofetch`
 
@@ -137,21 +152,6 @@ __Install & Configure Software__
 - Obsidian.md
   - [Download .deb file](https://obsidian.md/download)
   - Install with Eddy
-
-
-- Neovim
-  - `sudo apt install ninja-build gettext cmake unzip`
-  - `git clone https://github.com/neovim/neovim.git`
-  - `cd neovim`
-  - `git checkout v0.9.5`
-  - `make CMAKE_BUILD_TYPE=Release`
-  - `sudo make install`
-
-
-- Lazyvim
-  - `git clone https://github.com/LazyVim/starter ~/.config/nvim`
-  - `rm -rf ~/.config/nvim/.git`
-  - `nvim`
 
 
 ---
