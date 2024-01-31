@@ -53,14 +53,14 @@ __Install & Configure Software__
   - `sudo reboot now`
 
 
-- Alacritty
+- [Alacritty](https://github.com/alacritty/alacritty)
   - Download from Pop!_Shop
   - Download `.yml` from GitHub
   - `mkdir ~/.config/alacritty`
   - `mv ~/Downloads/alacritty.yml ~/.config/alacritty/alacritty.yml`
 
 
-- Git
+- [Git](https://git-scm.com/)
   - `git config --global user.name "Your Name"`
   - `git config --global user.email "your@email.com"`
   - `git config --global init.defaultBranch master`
@@ -74,7 +74,7 @@ __Install & Configure Software__
     - `yes`
 
 
-- ZSH & Oh-My-Zsh
+- [ZSH](https://zsh.org) & [Oh-My-Zsh](https://github.com/ohmyzsh/ohmyzsh)
   - `sudo apt install zsh`
   - `chsh -s $(which zsh)`
   - `sudo apt reboot now`
@@ -87,18 +87,18 @@ __Install & Configure Software__
     - `plugins=(git zsh-autosuggestions)`
 
 
-- Rust
+- [Rust](https://github.com/rust-lang/rust)
   - `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
   - `1`
   - Restart terminal
 
 
-- Python
+- [Python](https://www.python.org/)
   - `sudo apt install python3-pip`
   - `sudo apt install python3-venv`
 
 
-- NVM & NodeJS & NPM
+- [NVM](https://github.com/nvm-sh/nvm) & [NodeJS](https://nodejs.org/en) & [NPM](https://www.npmjs.com/)
   - `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash`
   - Restart terminal
   - `nvm install v20.11.0`
@@ -109,7 +109,7 @@ __Install & Configure Software__
     - `plugins=(git zsh-autosuggestions nvm node npm)`
 
 
-- Neovim
+- [Neovim](https://github.com/neovim/neovim)
   - `sudo apt install ninja-build gettext cmake unzip`
   - `git clone https://github.com/neovim/neovim.git`
   - `cd neovim`
@@ -118,25 +118,25 @@ __Install & Configure Software__
   - `sudo make install`
 
 
-- Lazyvim
+- [Lazyvim](https://www.lazyvim.org/)
   - `git clone https://github.com/LazyVim/starter ~/.config/nvim`
   - `rm -rf ~/.config/nvim/.git`
   - `nvim`
 
 
-- Neofetch
+- [Neofetch](https://github.com/dylanaraps/neofetch)
   - `sudo apt install neofetch`
 
 
-- GIMP
+- [GIMP](https://www.gimp.org/)
   - `sudo apt install gimp`
 
 
-- OBS Studio
+- [OBS Studio](https://obsproject.com/)
   - `sudo apt install ffmpeg obs-studio`
 
 
-- Brave Browser
+- [Brave Browser](https://brave.com/)
   - `sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg`
   - `echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list`
   - `sudo apt update`
@@ -144,12 +144,12 @@ __Install & Configure Software__
   - Set Brave as default browser in Settings
 
 
-- VS Code
+- [VS Code](https://code.visualstudio.com/)
   - [Download .deb file](https://code.visualstudio.com/Download)
   - Install with Eddy
 
 
-- Obsidian.md
+- [Obsidian.md](https://obsidian.md/)
   - [Download .deb file](https://obsidian.md/download)
   - Install with Eddy
 
