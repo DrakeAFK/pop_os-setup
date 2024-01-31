@@ -53,23 +53,25 @@ __Install & Configure Software__
   - `sudo reboot now`
 
 
+- Alacritty
+  - Download from Pop!_Shop
+  - Download `.yml` from GitHub
+  - `mkdir ~/.config/alacritty`
+  - `mv ~/Downloads/alacritty.yml ~/.config/alacritty/alacritty.yml`
+
+
 - Git
   - `git config --global user.name "Your Name"`
   - `git config --global user.email "your@email.com"`
   - `git config --global init.defaultBranch master`
   - `ssh-keygen -t rsa -C "your@email.com"`
   - `eval "$(ssh-agent -s)"`
+  - `exec ssh-agent zsh`
   - `ssh-add ~/.ssh/id_rsa`
   - `cat ~/.ssh/id_rsa.pub`
     - Copy key and paste into GitHub SSH Key settings
   - `ssh -T git@github.com`
     - `yes`
-
-
-- Rust
-  - `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
-  - `1`
-  - Restart terminal
 
 
 - ZSH & Oh-My-Zsh
@@ -79,25 +81,16 @@ __Install & Configure Software__
   - Open new terminal
     - `0`
   - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+  - Restart terminal
+  - `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
   - `sudo nano ~/.zshrc`
     - `plugins=(git zsh-autosuggestions)`
 
 
-- Alacritty
-  - `sudo apt install cmake libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev`
-  - `git clone https://github.com/alacritty/alacritty.git`
-  - `cd alacritty`
-  - `cargo build --release`
-  - `sudo cp target/release/alacritty /usr/local/bin`
-  - `sudo cp extra/logo/alacritty-term.svg /usr/share/pixmaps/Alacritty.svg`
-  - `sudo desktop-file-install extra/linux/Alacritty.desktop`
-  - `sudo update-desktop-database`
-  - `mkdir -p ~/.config/alacritty`
-  - `touch ~/.config/alacritty/alacritty.yml`
-  - Set Alacritty as default terminal
-    - `sudo update-alternatives --config x-terminal-emulator`
-    - Select `/usr/local/bin/alacritty`
-    - `sudo reboot now`
+- Rust
+  - `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
+  - `1`
+  - Restart terminal
 
 
 - Python
@@ -147,9 +140,18 @@ __Install & Configure Software__
 
 
 - Neovim
+  - `sudo apt install ninja-build gettext cmake unzip`
+  - `git clone https://github.com/neovim/neovim.git`
+  - `cd neovim`
+  - `git checkout v0.9.5`
+  - `make CMAKE_BUILD_TYPE=Release`
+  - `sudo make install`
 
 
 - Lazyvim
+  - `git clone https://github.com/LazyVim/starter ~/.config/nvim`
+  - `rm -rf ~/.config/nvim/.git`
+  - `nvim`
 
 
 ---
