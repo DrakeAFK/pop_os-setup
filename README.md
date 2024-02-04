@@ -133,6 +133,24 @@ __Install & Configure Software__
   - `touch init.lua`
 
 
+- [Nerd Fonts](https://www.nerdfonts.com/) _I use JetBrainsMono Nerd Font_
+  - Download `.zip` from website
+  - `cd ~/Downloads`
+  - `unzip JetBrainsMono.zip -d 3270`
+  - `cd 3270`
+  - `sudo mv -vf *.ttf /usr/local/share/fonts/`
+  - `cd ..`
+  - `rm -rf *`
+  - `nano ~/.config/alacritty/alacritty.yml`
+    - `font:`
+      - `normal:`
+        - `family: JetBrainsMono Nerd Font`
+        - `style: Regular`
+      - `bold:`
+        - `family: JetBrainsMono Nerd Font`
+        - `style: Bold`
+
+
 - [Lazyvim](https://www.lazyvim.org/)
   - `git clone https://github.com/LazyVim/starter ~/.config/nvim`
   - `rm -rf ~/.config/nvim/.git`
