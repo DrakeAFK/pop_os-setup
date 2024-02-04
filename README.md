@@ -60,20 +60,6 @@ __Install & Configure Software__
   - `mv ~/Downloads/alacritty.yml ~/.config/alacritty/alacritty.yml`
 
 
-- [Git](https://git-scm.com/)
-  - `git config --global user.name "Your Name"`
-  - `git config --global user.email "your@email.com"`
-  - `git config --global init.defaultBranch master`
-  - `ssh-keygen -t rsa -C "your@email.com"`
-  - `eval "$(ssh-agent -s)"`
-  - `exec ssh-agent zsh`
-  - `ssh-add ~/.ssh/id_rsa`
-  - `cat ~/.ssh/id_rsa.pub`
-    - Copy key and paste into GitHub SSH Key settings
-  - `ssh -T git@github.com`
-    - `yes`
-
-
 - [ZSH](https://zsh.org) & [Oh-My-Zsh](https://github.com/ohmyzsh/ohmyzsh)
   - `sudo apt install zsh`
   - `chsh -s $(which zsh)`
@@ -85,6 +71,32 @@ __Install & Configure Software__
   - `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
   - `sudo nano ~/.zshrc`
     - `plugins=(git zsh-autosuggestions)`
+
+
+- [Brave Browser](https://brave.com/)
+  - `sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg`
+  - `echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list`
+  - `sudo apt update`
+  - `sudo apt install brave-browser`
+  - Set Brave as default browser in Settings
+
+
+- [VS Code](https://code.visualstudio.com/)
+  - [Download .deb file](https://code.visualstudio.com/Download)
+  - Install with Eddy
+
+
+- [Git](https://git-scm.com/)
+  - `git config --global user.name "Your Name"`
+  - `git config --global user.email "your@email.com"`
+  - `git config --global init.defaultBranch master`
+  - `ssh-keygen -t ed25519 -C "your@email.com"`
+  - `eval "$(ssh-agent -s)"`
+  - `ssh-add ~/.ssh/id_rsa`
+  - `cat ~/.ssh/id_rsa.pub`
+    - Copy key and paste into GitHub SSH Key settings
+  - `ssh -T git@github.com`
+    - `yes`
 
 
 - [Rust](https://github.com/rust-lang/rust)
@@ -134,19 +146,6 @@ __Install & Configure Software__
 
 - [OBS Studio](https://obsproject.com/)
   - `sudo apt install ffmpeg obs-studio`
-
-
-- [Brave Browser](https://brave.com/)
-  - `sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg`
-  - `echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list`
-  - `sudo apt update`
-  - `sudo apt install brave-browser`
-  - Set Brave as default browser in Settings
-
-
-- [VS Code](https://code.visualstudio.com/)
-  - [Download .deb file](https://code.visualstudio.com/Download)
-  - Install with Eddy
 
 
 - [Obsidian.md](https://obsidian.md/)
