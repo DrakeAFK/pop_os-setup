@@ -118,7 +118,7 @@ __Install & Configure Software__
     - `node --version`
     - `npm --version`
   - `sudo nano ~/.zshrc`
-    - `plugins=(git zsh-autosuggestions nvm node npm)`
+    - `plugins=(git zsh-autosuggestions nvm node npm pip pipenv pyenv pylint python rust sudo vscode)`
 
 
 - [Neovim](https://github.com/neovim/neovim)
