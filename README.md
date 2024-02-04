@@ -128,6 +128,9 @@ __Install & Configure Software__
   - `cd build`
   - `cpack -G DEB`
   - `sudo dpkg -i nvim-0.9.5-Linux.deb`
+  - `mkdir ~/.config/nvim`
+  - `cd ~/.config/nvim`
+  - `touch init.lua`
 
 
 - [Lazyvim](https://www.lazyvim.org/)
