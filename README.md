@@ -133,7 +133,7 @@ __Install & Configure Software__
   - `touch init.lua`
 
 
-- [Nerd Fonts](https://www.nerdfonts.com/) _I use JetBrainsMono Nerd Font_
+- [Nerd Fonts](https://www.nerdfonts.com/) _(I use JetBrainsMono Nerd Font)_
   - Download `.zip` from website
   - `cd ~/Downloads`
   - `unzip JetBrainsMono.zip -d 3270`
