@@ -121,11 +121,13 @@ __Install & Configure Software__
 
 - [Neovim](https://github.com/neovim/neovim)
   - `sudo apt install ninja-build gettext cmake unzip`
-  - `git clone https://github.com/neovim/neovim.git`
+  - `git clone https://github.com/neovim/neovim`
   - `cd neovim`
   - `git checkout v0.9.5`
-  - `make CMAKE_BUILD_TYPE=Release`
-  - `sudo make install`
+  - `make CMAKE_BUILD_TYPE=RelWithDebInfo`
+  - `cd build`
+  - `cpack -G DEB`
+  - `sudo dpkg -i nvim-0.9.5-Linux.deb`
 
 
 - [Lazyvim](https://www.lazyvim.org/)
