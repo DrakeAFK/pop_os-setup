@@ -110,59 +110,62 @@ __Install & Configure Software__
     - `node --version` 
     - `npm --version` 
 
-- [Nerd Fonts](https://www.nerdfonts.com/) _(I use JetBrainsMono Nerd Font)_
-  - Download `.zip` from website
-  - `cd ~/Downloads`
-  - `unzip JetBrainsMono.zip -d 3270`
-  - `cd 3270`
-  - `sudo mv -vf *.ttf /usr/local/share/fonts/`
-  - `cd ..`
-  - `rm -rf *`
-  - `nano ~/.config/alacritty/alacritty.yml`
-    - `font:`
-      - `normal:`
-        - `family: JetBrainsMono Nerd Font`
-        - `style: Regular`
-      - `bold:`
-        - `family: JetBrainsMono Nerd Font`
-        - `style: Bold`
+- TODO: Languages 
+- Python 
+- Go 
+- Java? 
+- Rust? 
+- C++? 
+- Other 
 
-- [Python](https://www.python.org/) 
-  - `sudo apt install python3-pip` 
-  - `sudo apt install python3-venv` 
+- Nerd Fonts (https://www.nerdfonts.com/) _(I use JetBrainsMono Nerd Font)_ 
+  - TODO 
 
-- [Neovim](https://github.com/neovim/neovim)
-  - `sudo apt install ninja-build gettext cmake unzip`
-  - `git clone https://github.com/neovim/neovim`
-  - `cd neovim`
-  - `git checkout v0.9.5`
-  - `make CMAKE_BUILD_TYPE=RelWithDebInfo`
-  - `cd build`
-  - `cpack -G DEB`
-  - `sudo dpkg -i nvim-0.9.5-Linux.deb`
+- Neovim 
+  - `sudo apt install ninja-build cmake` 
+  - `cd ~` 
+  - `git clone https://github.com/neovim/neovim.git` 
+  - `cd neovim` 
+  - `git fetch --tags` 
+  - `git checkout v0.11.5` 
+  - `make CMAKE_BUILD_TYPE=RelWithDebInfo` 
+  - Test: `./build/bin/nvim --version` 
+  - `make CMAKE_BUILD_TYPE=RelWithDebInfo CMAKE_INSTALL_PREFIX=$HOME/.local install` 
+  - `source ~/.zshrc` 
+  - Verify: `which nvim`; `nvim --version` 
+  - `cd ~` 
+  - Updating for new LazyVim requirements: _see below_ 
 
-- [Lazyvim](https://www.lazyvim.org/)
-  - `git clone https://github.com/LazyVim/starter ~/.config/nvim`
-  - `rm -rf ~/.config/nvim/.git`
-  - `nvim`
+- LazyVim 
+  - `git clone https://github.com/LazyVim/starter ~/.config/nvim` 
+  - `rm -rf ~/.config/nvim/.git` 
+  - `nvim` 
+  - Allow all LazyVim plugins to install 
+  - `:qa` 
+  - `nvim` 
+  - `:checkhealth` 
+  - TODO 
+  - Upgrading Neovim for new LazyVim requirements: 
+    - LazyVim does not automatically upgrade Neovim 
+    - To upgrade Neovim: 
+      - `cd ~/neovim` 
+      - `git fetch` 
+      - `git fetch --tags` 
+      - `git checkout v0.12.0` 
+        - Example future version 
+      - `make distclean` 
+      - `make CMAKE_BUILD_TYPE=RelWithDebInfo` 
+      - `make CMAKE_INSTALL_PREFIX=$HOME/.local install` 
+      - `nvim --version` 
 
+- [Neofetch](https://github.com/dylanaraps/neofetch) 
+  - `sudo apt install neofetch` 
 
-- [Neofetch](https://github.com/dylanaraps/neofetch)
-  - `sudo apt install neofetch`
+- [GIMP](https://www.gimp.org/) 
+  - `sudo apt install gimp` 
 
-
-- [GIMP](https://www.gimp.org/)
-  - `sudo apt install gimp`
-
-
-- [OBS Studio](https://obsproject.com/)
-  - `sudo apt install ffmpeg obs-studio`
-
-
-- [Obsidian.md](https://obsidian.md/)
-  - [Download .deb file](https://obsidian.md/download)
-  - Install with Eddy
-
+- [OBS Studio](https://obsproject.com/) 
+  - `sudo apt install ffmpeg obs-studio` 
 
 ---
 
